@@ -3,8 +3,8 @@ class Gnuradio < Formula
 
   desc "SDK for signal processing blocks to implement software radios"
   homepage "https://gnuradio.org/"
-  url "https://github.com/gnuradio/gnuradio/archive/refs/tags/v3.9.3.0.tar.gz"
-  sha256 "4073ac72524f95fed4bda7dd553cb946f66d2e00bd07c4ae7758f1b787d507e0"
+  url "https://github.com/gnuradio/gnuradio/archive/refs/tags/v3.9.5.0.tar.gz"
+  sha256 "066c88fcf05046593e534416a3526ee433c3b90a7faa40fca914add23989ef3e"
   license "GPL-3.0-or-later"
   revision 4
   head "https://github.com/gnuradio/gnuradio.git", branch: "master"
@@ -75,10 +75,10 @@ class Gnuradio < Formula
 
   # patch to build with qt6
   # PR ref, https://github.com/gnuradio/gnuradio/pull/5034
-  patch do
-    url "https://github.com/gnuradio/gnuradio/commit/74bb3881c044d0fe9bb498ede8bcd17f0a27574c.patch?full_index=1"
-    sha256 "d5a76e38e9c50ce28d6efddde2ad3612f602879a7edc5161aa8fa7b93756edfd"
-  end
+  # patch do
+  #   url "https://github.com/gnuradio/gnuradio/commit/74bb3881c044d0fe9bb498ede8bcd17f0a27574c.patch?full_index=1"
+  #   sha256 "d5a76e38e9c50ce28d6efddde2ad3612f602879a7edc5161aa8fa7b93756edfd"
+  # end
 
   def install
     ENV.cxx11

@@ -3,18 +3,18 @@ class OciCli < Formula
 
   desc "Oracle Cloud Infrastructure CLI"
   homepage "https://docs.cloud.oracle.com/iaas/Content/API/Concepts/cliconcepts.htm"
-  url "https://files.pythonhosted.org/packages/4f/9b/5f24d201c9fdb9453eeac214cdc2dfbf3e72501140e4e170f42f2be0897b/oci-cli-3.5.3.tar.gz"
-  sha256 "3eb0ee74153d04b9884d4225bb3257f865ff6f85474eb71bea58eaea6ad9905c"
+  url "https://files.pythonhosted.org/packages/eb/50/92ef529c2738b33ce16c8fb1b77e4729445743e249216f53eeca2db30cbc/oci-cli-3.6.0.tar.gz"
+  sha256 "3c92ca9b71ae8851f65f5cd2a2a2d50fcb237eae0b10ee14f4ecd3eb7c040f45"
   license any_of: ["UPL-1.0", "Apache-2.0"]
   head "https://github.com/oracle/oci-cli.git", branch: "master"
 
   bottle do
-    sha256 cellar: :any,                 arm64_monterey: "5ed7c2ac1f8cdaf2c893cd5b0cbe0f673551100110db294cfa1d5c13337d3f28"
-    sha256 cellar: :any,                 arm64_big_sur:  "1dbab6b50b76a635309ccc76c621972d371131742e7a346e34afd2edbe7e5de9"
-    sha256 cellar: :any,                 monterey:       "728ec6f8a801230b2566ca7f5467fb43ac41d4f411be1f8f178bff396c5e6cee"
-    sha256 cellar: :any,                 big_sur:        "f1a8cb1b1d3e531e1beba2e8088a484ffc34777058dcba9038b4c93468346a8b"
-    sha256 cellar: :any,                 catalina:       "3700ea055d680974cf00133d797b7646504c858dc5fcb0ba9bb4fd61d0389d22"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "8495007b329489345d088df79afea18e4670cd5ca07f737359e3b968beeabbde"
+    sha256 cellar: :any,                 arm64_monterey: "a5eafbad1299c168197c48caddbda552db64d554b3cef4811a5cde3f6c2b5237"
+    sha256 cellar: :any,                 arm64_big_sur:  "1b4870ba6548e3b4049ea3415f7b9de3b10e44c5e122fa964697edd4b95b6acd"
+    sha256 cellar: :any,                 monterey:       "597a346e058933e93f25ac4f330ce6efd1bec118aaae4cf5a3b0c9af174719b5"
+    sha256 cellar: :any,                 big_sur:        "dae690070d11913323bc6f67908e511019688a9749db9b22e353d47204e8a2e7"
+    sha256 cellar: :any,                 catalina:       "b5b03f6b97f61cdb10ef15f600f6d571c229e3a5a8ee3323b3c4a4563e66b420"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:   "3fa13e7e509ab51f48e40aee5283816c00bb289b23a17eb1e87df4edf1f30da0"
   end
 
   depends_on "rust" => :build
@@ -57,8 +57,8 @@ class OciCli < Formula
   end
 
   resource "oci" do
-    url "https://files.pythonhosted.org/packages/e0/2d/07c23179597a0951773d70a15e0851232e160d9bff07141dae5dca261d9a/oci-2.59.0.tar.gz"
-    sha256 "2fb76ebea6ea29ecb06d11c679c00aba7821a25312ad358d7aa04c2cca16b8bf"
+    url "https://files.pythonhosted.org/packages/e0/40/eba393b7eac648891ef2878f2437cc777e7dd4271d92bdf83f3914cb8808/oci-2.60.0.tar.gz"
+    sha256 "91ae785380c95dbdb236fb207c0d44c99d02a8e20a534a3f74b06e5adf9c8b52"
   end
 
   resource "pycparser" do

@@ -211,6 +211,7 @@ class Gnuradio < Formula
 
       main()
     EOS
-    system Formula["python@3.9"].opt_bin/"python3", testpath/"test.py"
+    # system Formula["python@3.9"].opt_bin/"python3", testpath/"test.py"
+    system libexec/"venv/bin/python3", testpath/"test.py"
   end
 end
